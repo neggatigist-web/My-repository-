@@ -243,3 +243,28 @@ For issues or questions, please open an issue on the [GitHub repository](https:/
 </body>
 </html>
 
+   "style"
+// Get elements
+const colorDisplay = document.getElementById('colorDisplay');
+const colorCode = document.getElementById('colorCode');
+const changeColorBtn = document.getElementById('changeColorBtn');
+const randomColorBtn = document.getElementById('randomColorBtn');
+const colorInput = document.getElementById('colorInput');
+const applyColorBtn = document.getElementById('applyColorBtn');
+
+// Function to generate random color
+function generateRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+// Function to apply color to display
+function applyColor(color) {
+    try {
+        colorDisplay.style.backgroundColor = color;
+        // Get the computed color in hex format
+
