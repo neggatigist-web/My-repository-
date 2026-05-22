@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changer Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            transition: background-color 0.3s;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: lightgray;
+        }
+        h1 {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Changer</h1>
+    <p>Click the button to change background color</p>
+    <button id="colorButton">Change Color</button>
+
+    <script>
+        // List of colors to cycle through
+        const colors = ["lightblue", "lightgreen", "lightcoral", "lightyellow", "lavender", "lightpink"];
+        let index = 0;
+
+        const button = document.getElementById("colorButton");
+        button.addEventListener("click", function() {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
+        });
+    </script>
+</body>
+</html>
