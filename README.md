@@ -212,9 +212,7 @@ A: All modern browsers (Chrome, Firefox, Safari, Edge)
 
 For issues or questions, please open an issue on the [GitHub repository](https://github.com/neggatigist-web/My-repository-).
 
----
 
-**Happy Coding! 🚀**
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -243,6 +241,8 @@ For issues or questions, please open an issue on the [GitHub repository](https:/
 </body>
 </html>
 
+   
+**Happy Coding! 🚀**
   
 
    
