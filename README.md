@@ -185,6 +185,7 @@ This project is open source and available for educational purposes.
 
 ## 👤 Author
 
+[Tigist Negga]
 **Username**: neggatigist-web  
 **Repository**: [My-repository-](https://github.com/neggatigist-web/My-repository-)  
 **Created**: May 22, 2026
@@ -214,4 +215,31 @@ For issues or questions, please open an issue on the [GitHub repository](https:/
 ---
 
 **Happy Coding! 🚀**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Color Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Color Changer</h1>
+        <div class="color-display" id="colorDisplay"></div>
+        <p id="colorCode">#FFFFFF</p>
+
+        <button id="changeColorBtn" class="btn">Change Color</button>
+        <button id="randomColorBtn" class="btn btn-secondary">Random Color</button>
+
+        <div class="color-input-section">
+            <label for="colorInput">Enter Color Code:</label>
+            <input type="text" id="colorInput" placeholder="e.g., #FF5733 or red">
+            <button id="applyColorBtn" class="btn">Apply</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
